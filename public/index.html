@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Website Accessibility Check</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="intro">
+      <h1>Free website accessibility check</h1>
+      <p>Paste a page URL below for an automated scan against common WCAG 2.2 issues — missing alt text, poor colour contrast, unlabelled form fields and more. You'll get a plain-English report, plus a clear list of what this tool <strong>can't</strong> check.</p>
+    </header>
+
+    <form id="scan-form" class="scan-form">
+      <label for="url-input">Website URL</label>
+      <div class="scan-row">
+        <input id="url-input" name="url" type="url" placeholder="https://example.com" required autocomplete="off">
+        <button type="submit" id="scan-btn">Check my site</button>
+      </div>
+      <p class="hint">We'll load the page you enter and check it as an anonymous visitor would see it. This can take up to 30 seconds.</p>
+    </form>
+
+    <div id="status" class="status" hidden></div>
+
+    <section id="report" class="report" hidden></section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
