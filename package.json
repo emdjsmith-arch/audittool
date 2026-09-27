@@ -4,11 +4,10 @@
   "description": "Free website accessibility checker",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "postinstall": "npx playwright install --with-deps chromium"
+    "start": "node server/server.js"
   },
   "dependencies": {
-    "playwright": "^1.48.0"
+    "playwright": "1.48.0"
   },
   "engines": {
     "node": ">=18"

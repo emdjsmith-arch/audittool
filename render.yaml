@@ -1,10 +1,6 @@
 services:
   - type: web
     name: accessibility-checker
-    runtime: node
+    runtime: docker
+    dockerfilePath: ./Dockerfile
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: NODE_VERSION
-        value: 20.11.0
